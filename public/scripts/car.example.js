@@ -73,11 +73,10 @@ class Car {
                     </div>
                 </div>
 
-                <a href="#" class="btn btn-utama" style="width:100%">Go somewhere</a>
+                <a href="#" class="cari-mobil-btn" style="width:100%">Go somewhere</a>
             </div>
         </div>
 
-      
     `;
     }
 }

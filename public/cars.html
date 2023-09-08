@@ -14,48 +14,62 @@
     <link rel="stylesheet" href="scripts/nice-select2/dist/css/nice-select2.css">
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style2.css">
 </head>
 
 <body>
     <main>
-        <!-- Navbar -->
-        <nav class="navbar navbar-expand-lg bg-transparent">
-            <div class="container">
-                <a href="index.html"><img class="navbar-brand" src="images/logo.png" alt="" style="width: 100px; height: 34px;"></a>
-                <button class="btn btn-white navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><span
-                        class="navbar-toggler-icon"></span></button>
-                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
-                    <div class="offcanvas-header">
-                        <h5 class="offcanvas-title fw-bold" style="margin-left: 20px;" id="offcanvasRightLabel">BCR</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                    </div>
-                    <div class="offcanvas-body justify-content-end">
-                        <ul class="navbar-nav mr-2 mb-lg-0">
-                            <li class="nav-item mx-3 my-1"><a class="nav-link" href="#ourservices">Our Sevices</a></li>
-                            <li class="nav-item mx-3 my-1"><a class="nav-link ml" href="#whyus">Why Us</a></li>
-                            <li class="nav-item mx-3 my-1"><a class="nav-link" href="#testimonial">Testimonial</a></li>
-                            <li class="nav-item mx-3 my-1"><a class="nav-link" href="#faq">FAQ</a></li>
-                        </ul><button class="btn btn-register mx-3 my-1">Register</button>
-                    </div>
+        <!-- AWAL NAVBAR -->
+    <nav class="navbar navbar-expand-lg" aria-label="Offcanvas navbar large">
+        <div class="navbar-container container-fluid">
+            <a class="logo-binar-rental-car navbar-brand" href="#"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas-container" aria-controls="offcanvas-label">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end w-50" id="offcanvas-container" aria-labelledby="offcanvas-label">
+                <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvas-label"><strong>BCR</strong></h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-end flex-grow-1">
+                    <li class="nav-item pe-2">
+                        <a class="nav-link" href="#our-services">Our Services</a>
+                    </li>
+                    <li class="nav-item pe-2">
+                        <a class="nav-link" href="#why-us">Why Us</a>
+                    </li>
+                    <li class="nav-item pe-2">
+                        <a class="nav-link" href="#testimonial">Testimonial</a>
+                    </li>
+                    <li class="nav-item pe-3">
+                        <a class="nav-link" href="#faq">FAQ</a>
+                    </li>
+                    <button class="register-btn">Register</button>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- AKHIR NAVBAR -->
+
+    <!-- ================================================GARIS PEMBATAS================================================== -->
+
+    <!-- AWAL HERO SECTION -->
+    <section id="hero-section" class="hero d-flex align-items-center">
+        <div class="container">
+            <div class="row">
+                <div class="colom col-lg-6 d-flex flex-column justify-content-center">
+                    <p class="title-hero">Sewa & Rental Mobil Terbaik di kawasan (Lokasimu)</p>
+                    <p class="caption-title">Selamat datang di Binar Car Rental. Kami menyediakan mobil kualitas terbaik dengan harga terjangkau. Selalu siap melayani kebutuhanmu untuk sewa mobil selama 24 jam.</p>
+                    <a href="cars.html" class="mulai-sewa-btn" style="text-decoration: none;">Mulai Sewa Mobil</a>
+                </div>
+                <div class="colom col-lg-6 hero-img">
+                    <img class="foto-mobil img-fluid" src="asset/img/foto-mobil-binar.png" alt="">
                 </div>
             </div>
-        </nav>
-        <!-- Main Section -->
-        <section class="mobil">
-            <div class="container-xxl">
-                <div class="row">
-                    <!-- <div class="col-lg-1 col-xxl-1 col-md-1">
-                    </div> -->
-                    <div class="col-lg-5  mx-lg-5 col-xl-5 col-xxl-5 mx-md-0 " style="padding-top: 100px;">
-                        <h2 class="fw-bold" style="padding-right: 10px;">Sewa & Rental Mobil Terbaik di kawasan Depok</h2>
-                        <p style="padding-right: 40px;">Selamat datang di Binar Car Rental. Kami menyediakan mobil kualitas terbaik dengan harga terjangkau. Selalu siap melayani kebutuhanmu untuk sewa mobil selama 24 jam. </p><button class="btn btn-utama">Mulai Sewa Mobil</button>
-                    </div>
-                    <div class="col-lg-5 col-xl-6 col-xxl-6 mt-lg-3" style="padding-top: 50px; "><img class="" width="100%" src="images/img_car.png" alt=""></div>
-                </div>
-            </div>
-        </section>
-    </main>
+        </div>
+    </section>
+    <!-- AKHIR HERO SECTION --
 
     <!-- Search -->
     <section class="search">
@@ -76,7 +90,7 @@
                             <input type="date" class="form-control" placeholder="Pilih Tanggal" id="tanggal">
                         </div>
                         <div class="col-lg-auto col-xl-auto col-md-auto search__time">
-                            <labe>Pilih Waktu</labe>
+                            <label>Pilih Waktu</label>
                             <select class="form-select" aria-label="Default select example" id="waktuJemput">
                                     <option value="false" selected>Pilih Waktu &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</option>
                                     <option value="08:00">08.00 WIB</option>
@@ -84,7 +98,7 @@
                                     <option value="10:00">10.00 WIB</option>
                                     <option value="11:00">11.00 WIB</option>
                                     <option value="12:00">12.00 WIB</option>
-                                  </select>
+                            </select>
 
                         </div>
                         <div class="col-lg-auto col-xl-auto col-md-auto">
@@ -92,12 +106,12 @@
                             <div class="input-group">
                                 <input type="search" class="form-control border-end-0" placeholder="Jumlah Penumpang" id="jumlahPenumpang" value="0">
                                 <span class="input-group-text bg-white">
-                                  <img src="images/fi_users.png" width="20px" alt="">
+                                    <img src="images/fi_users.png" width="20px" alt="">
                                 </span>
                             </div>
                         </div>
-                        <div class="col-lg-2 col-xl-auto col-md-2  pt-4">
-                            <button class="btn btn-utama" id="load-btn">Cari Mobil</button>
+                        <div class="col-lg-2 col-xl-auto col-md-2 pt-4">
+                            <button class="cari-mobil-btn" id="load-btn">Cari Mobil</button>
                         </div>
                     </div>
                 </div>
@@ -153,36 +167,33 @@
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-3 mx-auto">
-                    <p class="fw-light">Jalan Suroyo No. 161 Mayangan Kota Probolonggo 672000 </p>
-                    <p class="fw-light">binarcarrental@gmail.com </p class="fw-light">
-                    <p>081-233-334-808</p>
-                </div>
-                <div class="col-md-3 mx-auto">
-                    <p>Our services</p>
-                    <p>Why Us</p>
-                    <p>Testimonial</p>
-                    <p>FAQ</p>
-                </div>
-                <div class="col-md-3 mx-auto">
-                    <p class="fw-light">Connect With Us</p>
-                    <p><img class="mx-1" src="images/icon_facebook.svg" alt="">
-                        <img class="mx-1" src="images/icon_instagram.svg" alt="">
-                        <img class="mx-1" src="images/icon_twitter.svg" alt="">
-                        <img class="mx-1" src="images/icon_mail.svg" alt="">
-                        <img class="mx-1" src="images/icon_twitch.svg" alt="">
-                    </p>
-                </div>
-                <div class="col-md-3 mx-auto">
-                    <p>Copyright Binar 2022</p><img src="images/logo.png" alt="" width="100px">
-                </div>
-            </div>
+    <!-- AWAL FOOTER -->
+    <footer class="d-flex justify-content-evenly pb-5">
+        <div class="address">
+            <p>Jalan Suroyo No. 161 Mayangan Kota Probolonggo 672000</p>
+            <p>binarcarrental@gmail.com</p>
+            <p>081-233-334-808</p>
+        </div>
+        <div class="navigation">
+            <p>Our services</p>
+            <p>Why Us</p>
+            <p>Testimonial</p>
+            <p>FAQ</p>
+        </div>
+        <div class="sosmed">
+            <p>Connect with us</p>
+            <img src="asset/img/icon-footer-facebook.svg" alt="">
+            <img src="asset/img/icon-footer-instagram.svg" alt="">
+            <img src="asset/img/icon-footer-twitter.svg" alt="">
+            <img src="asset/img/icon-footer-mail.svg" alt="">
+            <img src="asset/img/icon-footer-twitch.svg" alt="">
+        </div>
+        <div class="copyright">
+            <p>Copyright Binar 2022</p>
+            <div class="logo-binar-rental-car-footer"></div>
         </div>
     </footer>
+    <!-- AKHIR FOOTER -->
     <!-- Script -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="scripts/nice-select2/dist/js/nice-select2.js"></script>
